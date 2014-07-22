@@ -1,0 +1,69 @@
+// Sketch: Sync Plugins (control shift s)
+// Source: github.com/NathanRutzky/Sync-Plugins
+// Version: 1.0
+
+#import 'Plugin.index'
+
+var scriptPath = sketch.scriptPath
+var directory = [scriptPath stringByDeletingLastPathComponent] + "/"
+var alert = [[NSTask alloc] init]
+
+var pathLocal_0 = directory + Plugin_0
+var pathLocal_1 = directory + Plugin_1
+var pathLocal_2 = directory + Plugin_2
+var pathLocal_3 = directory + Plugin_3
+var pathLocal_4 = directory + Plugin_4
+var pathLocal_5 = directory + Plugin_5
+var pathLocal_6 = directory + Plugin_6
+var pathLocal_7 = directory + Plugin_7
+var pathLocal_8 = directory + Plugin_8
+var pathLocal_9 = directory + Plugin_9
+
+var pathRemote_0 = [NSURL URLWithString: GitHub_0]
+var pathRemote_1 = [NSURL URLWithString: GitHub_1]
+var pathRemote_2 = [NSURL URLWithString: GitHub_2]
+var pathRemote_3 = [NSURL URLWithString: GitHub_3]
+var pathRemote_4 = [NSURL URLWithString: GitHub_4]
+var pathRemote_5 = [NSURL URLWithString: GitHub_5]
+var pathRemote_6 = [NSURL URLWithString: GitHub_6]
+var pathRemote_7 = [NSURL URLWithString: GitHub_7]
+var pathRemote_8 = [NSURL URLWithString: GitHub_8]
+var pathRemote_9 = [NSURL URLWithString: GitHub_9]
+
+var dataLocal_0 = [NSData dataWithContentsOfFile: pathLocal_0]
+var dataLocal_1 = [NSData dataWithContentsOfFile: pathLocal_1]
+var dataLocal_2 = [NSData dataWithContentsOfFile: pathLocal_2]
+var dataLocal_3 = [NSData dataWithContentsOfFile: pathLocal_3]
+var dataLocal_4 = [NSData dataWithContentsOfFile: pathLocal_4]
+var dataLocal_5 = [NSData dataWithContentsOfFile: pathLocal_5]
+var dataLocal_6 = [NSData dataWithContentsOfFile: pathLocal_6]
+var dataLocal_7 = [NSData dataWithContentsOfFile: pathLocal_7]
+var dataLocal_8 = [NSData dataWithContentsOfFile: pathLocal_8]
+var dataLocal_9 = [NSData dataWithContentsOfFile: pathLocal_9]
+
+var dataRemote_0 = [NSData dataWithContentsOfURL: pathRemote_0]
+var dataRemote_1 = [NSData dataWithContentsOfURL: pathRemote_1]
+var dataRemote_2 = [NSData dataWithContentsOfURL: pathRemote_2]
+var dataRemote_3 = [NSData dataWithContentsOfURL: pathRemote_3]
+var dataRemote_4 = [NSData dataWithContentsOfURL: pathRemote_4]
+var dataRemote_5 = [NSData dataWithContentsOfURL: pathRemote_5]
+var dataRemote_6 = [NSData dataWithContentsOfURL: pathRemote_6]
+var dataRemote_7 = [NSData dataWithContentsOfURL: pathRemote_7]
+var dataRemote_8 = [NSData dataWithContentsOfURL: pathRemote_8]
+var dataRemote_9 = [NSData dataWithContentsOfURL: pathRemote_9]
+
+if (dataLocal_0 != dataRemote_0) [dataRemote_0 writeToFile: pathLocal_0]
+if (dataLocal_1 != dataRemote_1) [dataRemote_1 writeToFile: pathLocal_1]
+if (dataLocal_2 != dataRemote_2) [dataRemote_2 writeToFile: pathLocal_3]
+if (dataLocal_3 != dataRemote_3) [dataRemote_3 writeToFile: pathLocal_3]
+if (dataLocal_4 != dataRemote_4) [dataRemote_4 writeToFile: pathLocal_4]
+if (dataLocal_5 != dataRemote_5) [dataRemote_5 writeToFile: pathLocal_5]
+if (dataLocal_6 != dataRemote_6) [dataRemote_6 writeToFile: pathLocal_6]
+if (dataLocal_7 != dataRemote_7) [dataRemote_7 writeToFile: pathLocal_7]
+if (dataLocal_8 != dataRemote_8) [dataRemote_8 writeToFile: pathLocal_8]
+if (dataLocal_9 != dataRemote_9) [dataRemote_9 writeToFile: pathLocal_9]
+
+[doc showMessage: "Syncing Complete..."]
+[alert setLaunchPath: "/bin/bash"]
+[alert setArguments: ["-c", "afplay /System/Library/Sounds/Submarine.aiff"]]
+[alert launch]
