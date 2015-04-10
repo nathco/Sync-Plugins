@@ -1,7 +1,7 @@
 // Sketch Plugin Index
 
 Plugin_0 = "Sync Plugins.sketchplugin"
-GitHub_0 = "https://raw.githubusercontent.com/NathanRutzky/Sync-Plugins/master/Sync%20Plugins.sketchplugin"
+GitHub_0 = "https://raw.githubusercontent.com/nathco/Sync-Plugins/master/Sync%20Plugins.sketchplugin"
 	
 Plugin_1 = nil
 GitHub_1 = nil

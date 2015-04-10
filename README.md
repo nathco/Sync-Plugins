@@ -1,4 +1,4 @@
-# Sync ⌁ Plugins
+# Sync Plugins
 Sketch.app plugin for syncing current / local `.sketchplugins` with their master raw version at GitHub. Operates directly from the application menu bar.
 
 ## Installation
@@ -32,4 +32,4 @@ GitHub_3 = "https://raw.githubusercontent.com/user/repo/master/.."
 Only the plugins listed in `Plugin.index` will sync. The naming structure, for example: `Plugin_2` and `GitHub_2`, must remain intact for the plugins to sync properly. The script initially supports 10 plugins, but more can be added by editing the `Sync Plugins.sketchplugin` file. Do this **only** if you are completely confident in how it works.
 
 ## Feedback
-If you discover any issues or have questions regarding usage, please send a message to [mail@nath.co](mailto:mail@nath.co) or find me on twitter [@NathanRutzky](http://twitter.com/NathanRutzky).
+If you discover any issues or have questions regarding usage, please send a message to [code@nath.co](mailto:code@nath.co) or find me on GitHub [@nathco](https://github.com/nathco).

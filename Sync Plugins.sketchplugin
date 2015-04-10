@@ -1,6 +1,7 @@
-// Sketch: Sync Plugins (control shift s)
-// Source: github.com/NathanRutzky/Sync-Plugins
-// Version: 1.0
+// Plugin: Sync Plugins (control shift s)
+// Source: github.com/nathco/Sync-Plugins
+// Author: Nathan Rutzky
+// Update: 1.0
 
 #import 'Plugin.index'
 
